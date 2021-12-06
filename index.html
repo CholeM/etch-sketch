@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Etch-A-Sketch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+    
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Etch-A-Sketch</h1>
+    </header>
+    <main>
+      <div class="options">
+        <div class="btns">
+          <button class="btn blackbtn">Black</button>
+          <button class="btn rainbowbtn">Rainbow</button>
+          <button class="btn clearbtn">Clear</button>
+          <button class="btn erasebtn">Erase</button>
+        </div>
+        <div class="slider">
+          <input type="range" min="4" max="100" value="16" class="slideBar" id="cubeNum">
+          <p id="sizeNum">16 x 16</p>
+        </div>
+      </div>
+
+      <div class="container">
+        <div id="grid" class="grid"></div>
+      </div>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
